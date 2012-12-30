@@ -9,7 +9,7 @@ at the project root, issuing the command:
     lein ring server
 
 will start a local jetty server for you, and the hello-world route
-will be available at http://localhost:8080/hello-world
+will be available at [http://localhost:8080/hello-world](http://localhost:8080/hello-world)
 
 There are three files of interest:
 
