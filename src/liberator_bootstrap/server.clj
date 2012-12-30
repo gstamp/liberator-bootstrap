@@ -3,6 +3,9 @@
    [ring.adapter.jetty :as jetty])
   (:use
 
+  ; this code is taken from the liberator examples:
+  ; https://github.com/clojure-liberator/liberator/blob/master/examples/clj/examples/server.clj
+
   ; This is the part where we tell the server where our routes are defined
    [liberator-bootstrap.core :only [assemble-routes]]
 
@@ -20,16 +23,3 @@
      request)))
 
 (def handler (create-handler))
-
-(defn start [options]
-  (jetty/run-jetty
-   (fn [request]
-     ((create-handler) request))
-   (assoc options :join? false)))
-
-(defn -main
-  ([port]
-     (start {:port (Integer/parseInt port)}))
-  ([]
-     (-main "8000")))
-
