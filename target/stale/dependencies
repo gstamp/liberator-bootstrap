@@ -1,0 +1,1 @@
+([:dependencies [[org.clojure/clojure "1.4.0"] [compojure "1.0.2"] [ring/ring-jetty-adapter "1.1.0"] [liberator "0.3.2"] [ring-server "0.2.5"]]])
