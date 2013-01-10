@@ -13,11 +13,11 @@ will be available at [http://localhost:8080/hello-world](http://localhost:8080/h
 
 There are three files of interest:
 
-1. [server.clj](liberator-bootstrap/blob/master/src/liberator_bootstrap/server.clj) - Tells the ring plugin where the routes are defined, and how to fire up a server.
+1. [server.clj](blob/master/src/liberator_bootstrap/server.clj) - Tells the ring plugin where the routes are defined, and how to fire up a server.
 
-2. [core.clj](liberator-bootstrap/blob/master/src/liberator_bootstrap/core.clj) - Defines the routes in our application. I have defined the simplest possible route, hello-world.
+2. [core.clj](blob/master/src/liberator_bootstrap/core.clj) - Defines the routes in our application. I have defined the simplest possible route, hello-world.
 
-3. [project.clj](liberator-bootstrap/blob/master/project.clj) - Includes the necessary dependencies, and also installs the lein-ring plugin, which is how the "lein ring server" magic happens.
+3. [project.clj](blob/master/project.clj) - Includes the necessary dependencies, and also installs the lein-ring plugin, which is how the "lein ring server" magic happens.
 
 ## License
 
